@@ -138,7 +138,12 @@
             </footer>
         </main>
     </div>
-
+<script>
+    const token = sessionStorage.getItem('admin_token');
+    if (!token) {
+        window.location.href = 'login.html';
+    }
+</script>
     <script src="script.js"></script>
 </body>
 </html>
